@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colossus-ltsm"
+dynamic = ["version"] 
+keywords = ["fonts", "bitmap", "converter", "embedded", "lcd", "gui"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+description = "Font,bitmap conversion and visualization tool for embedded systems"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+authors = [
+  { name = "Gavin Lyons", email = "glyons66@hotmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+  "Pillow",
+]
+
+[project.scripts]
+colossus = "colossus_ltsm.colossus_main:main"
+
+[project.urls]
+Homepage = "https://github.com/gavinlyonsrepo/Colossus_LTSM"
+Issues = "https://github.com/gavinlyonsrepo/Colossus_LTSM/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
