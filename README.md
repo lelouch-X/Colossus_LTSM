@@ -2,15 +2,15 @@
 
 [![Website](https://img.shields.io/badge/Website-Link-blue.svg)](https://gavinlyonsrepo.github.io/)  [![Rss](https://img.shields.io/badge/Subscribe-RSS-yellow.svg)](https://gavinlyonsrepo.github.io//feed.xml)  [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/whitelight976)
 
-**Colossus_LTSM** is a Python tool for **converting TrueType fonts** (`.ttf`) into **C/C++ bitmap arrays** and for **visualizing font data** stored in C/C++ header files.  
-It is aimed at users working with **embedded systems, LCDs, and GUIs** where compact fonts are needed.
+**Colossus_LTSM** is a Python tool for converting TrueType fonts (`.ttf`) into C/C++ bitmap arrays and for visualizing font data stored in C/C++ header files.  
+It is aimed at users working with embedded systems, LCDs, and GUIs where compact fonts are needed.
 
 ## Features
 
 - Convert `.ttf` fonts to C/C++ arrays
-- Adjustable **font size**, **ASCII range**, and **addressing mode**
+- Adjustable font size, ASCII range, and addressing mode
 - Visualize fonts from existing C/C++ headers
-- GUI built with **Tkinter**
+- GUI built with Tkinter
 - Lightweight: only depends on `Pillow`
 
 ## Installation
@@ -20,6 +20,11 @@ It is aimed at users working with **embedded systems, LCDs, and GUIs** where com
 
 The program is present in python package index, Pypi.
 Install (you can use *pip* or *pipx*) to the location or environment of your choice.
+
+```python
+# For example with pipx 
+pipx install colossus-ltsm
+```
 
 ## Libraries
 
@@ -43,9 +48,9 @@ colossus
 ## Input
 
 - Select a `.ttf` font file
-- Set font size Width and Height(e.g., 12, 16, 24)
+- Set font size, Width and Height(e.g., 12, 16, 24)
 - Define ASCII range (e.g., 32-126)
-- Choose addressing mode (horizontal or vertical)
+- Choose data addressing mode (horizontal or vertical)
 - Choose C or C++ arrays
 - Choose file extension (.h or .hpp)
 - Choose font name and file name
