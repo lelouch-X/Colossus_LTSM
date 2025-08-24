@@ -106,7 +106,7 @@ Some of my libraries that use these fonts are:
 | MCU type |Library link | Data adddressing mode|
 | ------ | ------ | ----- |
 | Arduino | [GFX](https://github.com/gavinlyonsrepo/display16_LTSM) | Horizontal |
-| Raspberry Pi Pico | [GFX 16 bit](https://github.com/gavinlyonsrepodisplaylib_16bit_PICO) | Horizontal |
-| Raspberry Pi Pico | [GFX 1 bit](https://github.com/gavinlyonsrepodisplaylib_1bit_PICO) | Vertical |
+| Raspberry Pi Pico | [GFX 16 bit](https://github.com/gavinlyonsrepo/displaylib_16bit_PICO) | Horizontal |
+| Raspberry Pi Pico | [GFX 1 bit](https://github.com/gavinlyonsrepo/displaylib_1bit_PICO) | Vertical |
 | Raspberry Pi | [GFX](https://github.com/gavinlyonsrepo/Display_Lib_RPI) | Horizontal |
 | PIC | [OLED](https://github.com/gavinlyonsrepo/pic_18F47K42_projects ) | Vertical |
