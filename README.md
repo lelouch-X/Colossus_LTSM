@@ -2,10 +2,22 @@
 
 [![Website](https://img.shields.io/badge/Website-Link-blue.svg)](https://gavinlyonsrepo.github.io/)  [![Rss](https://img.shields.io/badge/Subscribe-RSS-yellow.svg)](https://gavinlyonsrepo.github.io//feed.xml)  [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/whitelight976)
 
+## Table of Contents
+
+* [Overview](#overview)
+* [Installation](#installation)
+* [Libraries](#libraries)
+* [Usage](#usage)
+* [Input](#input)
+* [Output](#output)
+* [Configuration file](#configuration-file)
+* [Screenshots](#screenshots)
+* [Projects](#projects)
+
+## Overview
+
 **Colossus_LTSM** is a Python tool for converting TrueType fonts (`.ttf`) into C/C++ bitmap arrays and for visualizing font data stored in C/C++ header files.  
 It is aimed at users working with embedded systems, LCDs, and GUIs where compact fonts are needed.
-
-## Features
 
 - Convert `.ttf` fonts to C/C++ arrays
 - Adjustable font size, ASCII range, and addressing mode
@@ -28,7 +40,7 @@ pipx install colossus-ltsm
 
 ## Libraries
 
-- [Pillow](https://python-pillow.org/) for image processing
+[Pillow](https://python-pillow.org/) for image processing
 
 ## Usage
 
@@ -41,24 +53,24 @@ Run the GUI:
 
 ```python
 colossus
-// or directly with Python
+# or directly with Python
  python3 -m colossus_ltsm.colossus_main
 ```
 
 ## Input
 
-- Select a `.ttf` font file
-- Set font size, Width and Height(e.g., 12, 16, 24)
-- Define ASCII range (e.g., 32-126)
-- Choose data addressing mode (horizontal or vertical)
-- Choose C or C++ arrays
-- Choose file extension (.h or .hpp)
-- Choose font name and file name
+* Select a `.ttf` font file
+* Set font size, Width and Height(e.g., 12, 16, 24)
+* Define ASCII range (e.g., 32-126)
+* Choose data addressing mode (horizontal or vertical)
+* Choose C or C++ arrays
+* Choose file extension (.h or .hpp)
+* Choose font name and file name
 
 ## Output
 
-- Generates a C or C++ header file with bitmap arrays
-- Example output
+* Generates a C or C++ header file with bitmap arrays
+* Example output
 
 ```c
 // Example Font
@@ -86,3 +98,15 @@ The file is located at '~/.config/colossus_ltsm/colossus_ltsm.cfg' on Linux syst
 ## Screenshots
 
 ![ image ](https://github.com/gavinlyonsrepo/Colossus_LTSM/blob/main/extras/images/screenshot.png)
+
+## Projects
+
+Some of my libraries that use these fonts are:
+
+| MCU type |Library link | Data adddressing mode|
+| ------ | ------ | ----- |
+| Arduino | [GFX](https://github.com/gavinlyonsrepo/display16_LTSM) | Horizontal |
+| Raspberry Pi Pico | [GFX 16 bit](https://github.com/gavinlyonsrepodisplaylib_16bit_PICO) | Horizontal |
+| Raspberry Pi Pico | [GFX 1 bit](https://github.com/gavinlyonsrepodisplaylib_1bit_PICO) | Vertical |
+| Raspberry Pi | [GFX](https://github.com/gavinlyonsrepo/Display_Lib_RPI) | Horizontal |
+| PIC | [OLED](https://github.com/gavinlyonsrepo/pic_18F47K42_projects ) | Vertical |
